@@ -3,30 +3,28 @@ body {
 }
 
 p.heading {
+    margin: auto;
+    padding: 40px;
     text-align: center;
     font-family: Palatino;
-    transform: translateY(-150px);
     word-spacing: 5em;
 }
 
 h1 {
     text-align: center;
     font-family: Palatino, Times;
-    background-color: white;
-    width: 60%;
-    border: 2px solid pink;
-    padding: 40px;
-    margin: auto;
-    transform: translateY(70px);
+    margin: 0;
+    padding = 0;
+    line-height: 140%;
 }
 
-
-
 p.other {
+    margin: 0;
+    padding = 0;
     text-align: center;
     font-family: Palatino;
-    transform: translateY(12px);
-    font-style: italic
+    font-style: italic;
+    line-height: 140%;
 }
 
 html {
@@ -36,5 +34,14 @@ html {
 img {
     display: block;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 50px;
+}
+
+div {
+    border: 2px solid pink;
+    padding: 30px;
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    
 }
