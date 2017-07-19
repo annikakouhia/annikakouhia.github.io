@@ -25,7 +25,8 @@ h1 {
 p.other {
     text-align: center;
     font-family: Palatino;
-    transform: translateY(90px);
+    transform: translateY(12px);
+    font-style: italic
 }
 
 html {
@@ -33,7 +34,7 @@ html {
 }
 
 img {
-    transform: translateY(140px);
     display: block;
-    margin: 0 auto;
+    margin: auto;
+    padding-top: 30px;
 }
