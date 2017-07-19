@@ -4,7 +4,7 @@ body {
 
 p.heading {
     margin: auto;
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     font-family: Palatino;
     word-spacing: 5em;
@@ -35,15 +35,15 @@ p.subline {
     margin: 0 10.5%;
     text-align: center;
     text-align: justify;
-    line-height: 125%;
+    line-height: 155%;
     padding: 20px;
     position: absolute;
 }
 
 h2.welcome {
     margin: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     font-family: Palatino;
     color: white;
@@ -57,7 +57,7 @@ html {
     display: block;
     float: right;
     margin: 0 10.5%;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .box {
