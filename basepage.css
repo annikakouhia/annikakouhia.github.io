@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(#E5F3F7, slategray);
+}
+
+p.heading {
+    text-align: center;
+    font-family: Palatino;
+    transform: translateY(-150px);
+    word-spacing: 5em;
+}
+
+h1 {
+    text-align: center;
+    font-family: Palatino, Times;
+    background-color: white;
+    width: 60%;
+    border: 2px solid pink;
+    padding: 40px;
+    margin: auto;
+    transform: translateY(70px);
+}
+
+
+
+p.other {
+    text-align: center;
+    font-family: Palatino;
+    transform: translateY(90px);
+}
+
+html {
+    height: 100%
+}
+
+img {
+    transform: translateY(140px);
+    display: block;
+    margin: 0 auto;
+}
