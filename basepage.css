@@ -28,14 +28,14 @@ p.subline {
 }
 
 .bio {
-    width: 340px;
-    height: 340px;
+    width: 360px;
+    height: 360px;
     border: 2px solid white;
     float: left;
     margin: 0 10.5%;
     text-align: center;
     text-align: justify;
-    line-height: 145%;
+    line-height: 125%;
     padding: 20px;
     position: absolute;
 }
@@ -57,6 +57,7 @@ html {
     display: block;
     float: right;
     margin: 0 10.5%;
+    padding-bottom: 40px;
 }
 
 .box {
