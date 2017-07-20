@@ -14,7 +14,12 @@ body {
     background-color: gainsboro;
 }
 
-.fullbar a: {
+.navHead {
+    padding: 25px;
+    text-align: center;
+    color: black;
+    font-family: Palatino;
+    word-spacing: 5em;
     background-color: gainsboro;
 }
 
