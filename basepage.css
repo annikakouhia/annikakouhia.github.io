@@ -14,7 +14,7 @@ body {
     background-color: gainsboro;
 }
 
-.fullbar a:active {
+.fullbar a: {
     background-color: gainsboro;
 }
 
