@@ -2,12 +2,26 @@ body {
     background: linear-gradient(#E5F3F7, slategray);
 }
 
-p.heading {
-    margin: auto;
-    padding: 30px;
+.heading {
+    padding: 25px;
     text-align: center;
+    color: black;
     font-family: Palatino;
     word-spacing: 5em;
+}
+
+.fullbar a:hover {
+    background-color: gainsboro;
+}
+
+.fullbar a:active {
+    background-color: gainsboro;
+}
+
+.fullbar {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 h1 {
@@ -30,7 +44,7 @@ p.subline {
 .bio {
     width: 360px;
     height: 360px;
-    border: 2px solid white;
+    border: 2px solid black;
     float: left;
     margin: 0 10.5%;
     text-align: center;
