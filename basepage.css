@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(#E5F3F7, slategray);
+    background-attachment: fixed;
 }
 
 .heading {
@@ -37,7 +38,7 @@ h1 {
     line-height: 140%;
 }
 
-p.subline {
+.subline {
     margin: 0;
     padding = 0;
     text-align: center;
@@ -49,19 +50,19 @@ p.subline {
 .bio {
     margin-right:12.5%;
     margin-left: 8.5%;
-    margin-top: 0px;
+    margin-top: 0.3%;
     margin-bottom: 0px;
     text-align: center;
     text-align: justify;
-    font-size: 1.55vw;
+    font-size: 1.5vw;
     line-height: 130.9%;
-    padding: 7px;
+    padding: .5%;
     position: absolute;
     display: inline;
     border: 2px solid black;
 }
 
-h2.welcome {
+.welcome {
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -71,7 +72,7 @@ h2.welcome {
 }
 
 html {
-    height: 100%
+    height: 100%;
 }
 
 .profpic {
@@ -87,6 +88,5 @@ html {
     padding: 30px;
     background-color: white;
     width: 60%;
-    margin: auto;
-    
+    margin: auto;   
 }
