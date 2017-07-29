@@ -23,10 +23,10 @@
     </div>
     
     <div class = projTitle>
-        <a name="CS01">Dartmouth Map</a>
+        <a name="CS01">Dartmouth Map: Coded in Python</a>
     </div>
     
-    <div class = "caption"><img class="dartMap" src="DartMap.png">
+    <div class = "caption"><img class="projImg" src="DartMap.png">
         <br>What it does:<br>
             One of my favorite projects from CS01: Introduction to Programming and Computation, this program allows a user to navigate Dartmouth campus using only the most efficient routes between start and goal locations. Users can click on a beginning location, and hover over any other location to visually receive the shortest path between the two points.
         <br><br>What I was given:<br>
@@ -36,7 +36,16 @@
     </div>
     
     <div class = projTitle>
-        <a name="CS10">Part of Speech Mapping</a>
+        <a name="CS10">Part of Speech Mapping: Coded in Java</a>
+    </div>
+    
+    <div class = "caption"><img class="projImg" src="POS.png">
+        <br>What it does:<br>
+            I completed this project with my lovely partner Morgan Sorbaro during CS10: Object Oriented Programming. This program prompts the user to enter a sentence, and then in response will output the part of speech that corresponds with each word in the sentence. For testing purposes, it can also be run with a text file input, and check its answers against a corresponding "answer bank", finally outputting the number it got correct. Our final submission scored 59/59 on a smaller test set (100% accuracy) and 562786/579662 on a larger test set (97% accuracy).
+        <br><br>What we were given:<br>
+            To begin this lab, we were given access to Brown Training Files--massive text files which Brown University had created corresponding files for, which documented the part of speech for each word in the original file. We were also given smaller, simpler training files, and both small and large testing files.
+        <br><br>How we coded it:<br>
+            We first used two methods to read our training files and add each seen word to a master list of words, and each seen part of speech (POS) to a master list of parts of speech. We went through our master list of POS and for each POS, looked at the POS that followed it in the list. We created a map of POS keys, and values that were a map of each unique POS we saw follow, and the number of times we saw it follow. For example, if we saw DET, TO, DET, ADJ, DET, ADJ, we would know that DET was followed 1 time by TO and 2 times by ADJ. We then converted mere number of follows to frequencies--so 1 changed to 1/3 and 2 changed to 2/3. After creating this map, did the same but with POS keys to specific words that followed (accessed by looking at the master list of words at that index) and their frequencies. We then used the Viterbi Algorithm, which basically took into consideration the probability that each type of POS followed the one in question (1/3 chance TO, 2/3 chance ADJ) and the probability of the following word being different POS ('run' as a noun vs. 'run' as a verb). We then kept track of many different potential "paths", grooming our tree of different sentence structures as possible. As we went through each potential series of POSs we kept were careful to keep a map that allowed us to backtrace at the end. Upon reaching the conclusion of the test data or inputted sentence, the program found the path that was the most likely, backtraced it, and printed out the results. We also wrote helper methods to compare our answer to a text document with the correct answers in case the user wanted to test against documented data.
     </div>
     
     <div class = projTitle>
