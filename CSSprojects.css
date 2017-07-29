@@ -20,5 +20,19 @@
     text-align: center;
     font-family:Palatino;
     font-size: 20px;
-    padding: 20px;   
+    padding: 20px;
+}
+
+.dartMap{
+    width: 50%;
+    float: right;
+}
+
+.caption::after{
+    font-family: Palatino;
+    padding: 20px;
+    
+    content: "";
+    clear: both;
+    display: table;
 }
