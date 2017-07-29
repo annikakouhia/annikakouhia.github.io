@@ -26,7 +26,14 @@
         <a name="CS01">Dartmouth Map</a>
     </div>
     
-    <div class = "caption"><img class="dartMap" src="DartMap.png"><br><br>About: <br></div>
+    <div class = "caption"><img class="dartMap" src="DartMap.png">
+        <br>What it does:<br>
+            One of my favorite projects from CS01: Introduction to Programming and Computation, this program allows a user to navigate Dartmouth campus using only the most efficient routes between start and goal locations. Users can click on a beginning location, and hover over any other location to visually receive the shortest path between the two points.
+        <br><br>What I was given:<br>
+            To begin this lab, I was given acccess to a pdf version of a standard campus map. I was also given a corresponding text file which held the name of each location (or "vertex") on campus, its x and y coordinates in pixels as corresponded to the pdf map, and a list of the names of its immediate, neighboring locations.
+        <br><br>How I coded it:<br>
+            I first set about analyzing the text file, parsing, slicing, and splitting the data, and saving each location's line of information in a useful "vertex" object I created separately. Once I had translated the text into objects, I saved the objects in a dictionary, where the keys were each location's name, and the corresponding value was the corresponding vertex object. I then programmed a breadth first search method which would take a start and goal vertex, and return a list of vertices that marked the shortest between the two, after analyzing potential routes via shared neighbors. Finally, I animated the software, creating a simple, user-friendly interface which allowed users to quickly map the optimal path between any two locations on campus.
+    </div>
     
     <div class = projTitle>
         <a name="CS10">Part of Speech Mapping</a>
