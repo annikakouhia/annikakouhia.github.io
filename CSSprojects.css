@@ -31,7 +31,6 @@
 .caption::after{
     font-family: Palatino;
     padding: 20px;
-    
     content: "";
     clear: both;
     display: table;
