@@ -39,7 +39,7 @@
         <a name="CS10">Part of Speech Mapping: Coded in Java</a>
     </div>
     
-    <div class = "caption"><img class="projImg" src="POS.png">
+    <div class = "caption"><img class="altProjImg" src="POS.png">
         <br>What it does:<br>
             I completed this project with my lovely partner Morgan Sorbaro during CS10: Object Oriented Programming. This program prompts the user to enter a sentence, and then in response will output the part of speech that corresponds with each word in the sentence. For testing purposes, it can also be run with a text file input, and check its answers against a corresponding "answer bank", finally outputting the number it got correct. Our final submission scored 59/59 on a smaller test set (100% accuracy) and 562786/579662 on a larger test set (97% accuracy).
         <br><br>What we were given:<br>
@@ -50,6 +50,17 @@
     
     <div class = projTitle>
         <a name="CS50">Tiny Search Engine</a>
+    </div>
+    
+    <div class = "caption"><img class="projImg" src="TSE%20Query.png">
+        <br>What it does:<br>
+            Given a root webpage and a certain depth of search, this program allows users to enter search queries, and receive back any webpages which have that query somewhere on the page. The webpage must be within the given depth of links from the original webpage, and will be scored based on how frequently the query appears. The results are sorted by highest to lowest score.
+        <br><br>What I was given:<br>
+            I was given access to certain "safe" root webpages designed specifically for this project so as to not overwhelm the internet or our tiny search engine while conducting queries. The project was also broken down into a Crawler, Indexer, and Querier for ease of organization.
+        <br><br>How I coded it:<br>
+            Our Crawler began with our root webpage, and scanned it for links to each webpage it connected to, and then scanned webpages each of those connected to, and webpages each of those connected to, etc. until the maximum depth was achieved. As it crawled through webpages and links, it documented each page by saving a corresponding text file with the page's URL on the first line, the depth from the root webpage on the second, and the page's HTML starting on the third. Each document was named as the number webpage that had been searched, the first saved as 1, the second as 2, etc.<br>
+            Our Indexer then took over, creating a master hashtable of each word seen in any HTML, and then pairs of values associated with that word. The first value in each pair was the document number in which that word was found, and the second value in the pair was the number of times that word was found in that document. Once our hashtable was created, we wrote it out to a file in a concise format that allowed for an easy visual summary of our index.
+            Finally, our Querier actually handled incoming queries from the user, splicing apart and stringing together queries with "and" and "or" throughout. It then searched our index for data that matched the query, and eventually summarized findings and outputted to the user.
     </div>
         
 </body>

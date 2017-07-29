@@ -28,6 +28,11 @@
     float: right;
 }
 
+.altProjImg{
+    width: 50%;
+    float: left;
+}
+
 .caption::after{
     font-family: Palatino;
     padding: 20px;
