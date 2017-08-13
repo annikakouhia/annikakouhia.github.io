@@ -3,6 +3,11 @@ body {
     background-attachment: fixed;
 }
 
+.parallax-container {
+    height: 500px;
+}
+       
+
 .heading {
     padding: 15px;
     text-align: center;
