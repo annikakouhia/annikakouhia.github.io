@@ -38,42 +38,6 @@ video {
 
 }
 
-
-
-.heading {
-    text-decoration: none;
-    padding: 15px;
-    text-align: center;
-    color: black;
-    font-family: Quattrocento;
-    margin: 10px;
-    font-size: 1.5rem;
-
-}
-
-.navHead {
-    text-decoration: none;
-    padding: 15px;
-    text-align: center;
-    color: black;
-    font-family: Quattrocento;
-    background-color: #EBD0C7;
-    margin: 10px;
-    font-size: 1.5rem;
-
-}
-
-.fullbar a:hover {
-    background-color: #EBD0C7;
-}
-
-.fullbar {
-    text-align: right;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-right: 20px;
-}
-
     
 .parallax-container {
       height: 400px;
