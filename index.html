@@ -20,13 +20,15 @@
 
 <body>
 
-
-        
-    <div class = "fullbar">
-        <a class = "navHead" href="index.html">Home</a>
-        <a class = "heading" href="#about">About</a>
-        <a class = "heading" href="#projects">Projects</a>
-        <a class = "heading" href="#contact">More</a>
+    <div class="navbar-fixed">
+        <nav class = "z-depth-0 transparent">
+        <div class = "fullbar">
+            <a class = "navHead" href="index.html">Home</a>
+            <a class = "heading" href="#about">About</a>
+            <a class = "heading" href="#projects">Projects</a>
+            <a class = "heading" href="#contact">More</a>
+        </div>
+        </nav>
     </div>
     
     <div id = "annika">
@@ -60,6 +62,7 @@
                 <img class="circle responsive-img" src="img/LinkedIn.jpg">
             </div>
             <div class="col s6">
+
                 <p class="grey-text text-darken-3 lighten-3" style="font-family:'Quattrocento';">Welcome! My name is Annika Kouhia and I am a rising sophomore at Dartmouth college. I'm an aspiring software engineer, but also love both psychology and math. I've studied Java, Python, and C, and in my free time have taught myself how to work in HTML, CSS, and Javascript--which led to the creation of this very website. I'm especially interested in artificial intelligence and the front end of web development, but honestly love all things code.<br><br>Outside of class I love both people and the outdoors. I've most recently combined these interests by helping to welcome Dartmouth's newest freshman class as a volunteer for our First Year Trips program. Ask me about the three weeks I spent living in the woods, cooking brownies on a grill, and singing/dancing/mountain biking with incoming freshmen--there are a lot of fun stories.</p>
             </div>
         </div>
@@ -76,30 +79,79 @@
   <div class="section white">
     <div class="row container">
         <a name="projects"> <h2 class="header" style="color:black;font-family:'Quattrocento';">Projects</h2> </a>
-      
+        <h4 style="color:black;font-family:'Quattrocento';text-align: center;">Tiny Search Engine: Coded in C</h4>
         <div class="row">
             <div class="col s6">
                 <img class="responsive-img" src="img/TSE%20Query.png">
             </div>
             <div class="col s6">
-                <p class="grey-text text-darken-3 lighten-3" style="color:black;font-family:'Quattrocento';">What it does:<br>
-                Given a root webpage and a certain depth of search, this program allows users to enter search queries, and receive back any webpages which have that query somewhere on the page. The webpage must be within the given depth of links from the original webpage, and will be scored based on how frequently the query appears. The results are sorted by highest to lowest score.
-                <br><br>
-                What I was given:<br>
-                I was given access to certain "safe" root webpages designed specifically for this project so as to not overwhelm the internet or our tiny search engine while conducting queries. The project was also broken down into a Crawler, Indexer, and Querier for ease of organization. <br><br></p>
-        
-                
+                <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">toys</i>What it does:</div>
+                      <div class="collapsible-body"><span>Given a root webpage and a certain depth of search, this program allows users to enter search queries, and receive back any webpages which have that query somewhere on the page. The webpage must be within the given depth of links from the original webpage, and will be scored based on how frequently the query appears. The results are sorted by highest to lowest score.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">business_center</i>What I was given:</div>
+                      <div class="collapsible-body"><span>I was given access to certain "safe" root webpages designed specifically for this project so as to not overwhelm the internet or our tiny search engine while conducting queries. The project was also broken down into a Crawler, Indexer, and Querier for ease of organization.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">brush</i>How I coded it:</div>
+                      <div class="collapsible-body"><span>Our Crawler began with our root webpage, and scanned it for links to each webpage it connected to, and then scanned webpages each of those connected to, and webpages each of those connected to, etc. until the maximum depth was achieved. As it crawled through webpages and links, it documented each page by saving a corresponding text file with the page's URL on the first line, the depth from the root webpage on the second, and the page's HTML starting on the third. Each document was named as the number webpage that had been searched, the first saved as 1, the second as 2, etc.<br>
+                        Our Indexer then took over, creating a master hashtable of each word seen in any HTML, and then pairs of values associated with that word. The first value in each pair was the document number in which that word was found, and the second value in the pair was the number of times that word was found in that document. Once our hashtable was created, we wrote it out to a file in a concise format that allowed for an easy visual summary of our index. <br>
+                          Finally, our Querier actually handled incoming queries from the user, splicing apart and stringing together queries with "and" and "or" throughout. Itthen tehn  then searched our index for data that matched the query, and eventually summarized findings and outputted to the user.</span></div>
+                    </li>
+                  </ul>
             </div>
         </div>
         
-        <p>
-            Our <b>Crawler</b> began with our root webpage, and scanned it for links to each webpage it connected to, and then scanned webpages each of those connected to, and webpages each of those connected to, etc. until the maximum depth was achieved. As it crawled through webpages and links, it documented each page by saving a corresponding text file with the page's URL on the first line, the depth from the root webpage on the second, and the page's HTML starting on the third. Each document was named as the number webpage that had been searched, the first saved as 1, the second as 2, etc.<br>
-            Our Indexer then took over, creating a master hashtable of each word seen in any HTML, and then pairs of values associated with that word. The first value in each pair was the document number in which that word was found, and the second value in the pair was the number of times that word was found in that document. Once our hashtable was created, we wrote it out to a file in a concise format that allowed for an easy visual summary of our index. <br>
-            Finally, our Querier actually handled incoming queries from the user, splicing apart and stringing together queries with "and" and "or" throughout. Itthen tehn  then searched our index for data that matched the query, and eventually summarized findings and outputted to the user.
-        </p>
+        <h4 style="color:black;font-family:'Quattrocento';text-align: center;">Part of Speech Mapping: Coded in Java</h4>
+        <div class="row">
+            <div class="col s6">
+                <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">toys</i>What it does:</div>
+                      <div class="collapsible-body"><span>I completed this project with my lovely partner Morgan Sorbaro during CS10: Object Oriented Programming. This program prompts the user to enter a sentence, and then in response will output the part of speech that corresponds with each word in the sentence. For testing purposes, it can also be run with a text file input, and check its answers against a corresponding "answer bank", finally outputting the number it got correct. Our final submission scored 59/59 on a smaller test set (100% accuracy) and 562786/579662 on a larger test set (97% accuracy).</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">business_center</i>What I was given:</div>
+                      <div class="collapsible-body"><span>To begin this lab, we were given access to Brown Training Files--massive text files which Brown University had created corresponding files for, which documented the part of speech for each word in the original file. We were also given smaller, simpler training files, and both small and large testing files.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">brush</i>How I coded it:</div>
+                      <div class="collapsible-body"><span>We first used two methods to read our training files and add each seen word to a master list of words, and each seen part of speech (POS) to a master list of parts of speech. We went through our master list of POS and for each POS, looked at the POS that followed it in the list. We created a map of POS keys, and values that were a map of each unique POS we saw follow, and the number of times we saw it follow. For example, if we saw DET, TO, DET, ADJ, DET, ADJ, we would know that DET was followed 1 time by TO and 2 times by ADJ. We then converted mere number of follows to frequencies--so 1 changed to 1/3 and 2 changed to 2/3. After creating this map, did the same but with POS keys to specific words that followed (accessed by looking at the master list of words at that index) and their frequencies. We then used the Viterbi Algorithm, which basically took into consideration the probability that each type of POS followed the one in question (1/3 chance TO, 2/3 chance ADJ) and the probability of the following word being different POS ('run' as a noun vs. 'run' as a verb). We then kept track of many different potential "paths", grooming our tree of different sentence structures as possible. As we went through each potential series of POSs we kept were careful to keep a map that allowed us to backtrace at the end. Upon reaching the conclusion of the test data or inputted sentence, the program found the path that was the most likely, backtraced it, and printed out the results. We also wrote helper methods to compare our answer to a text document with the correct answers in case the user wanted to test against documented data. </span></div>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col s6">
+                <img class="responsive-img" src="img/POS.png">
+            </div>
+        </div>
         
+        <h4 style="color:black;font-family:'Quattrocento';text-align: center;">Dartmouth Map: Coded in Python</h4>
+        <div class="row">
+            <div class="col s6">
+                <img class="responsive-img" src="img/DartMap.png">
+            </div>
+            <div class="col s6">
+                <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">toys</i>What it does:</div>
+                      <div class="collapsible-body"><span>One of my favorite projects from CS01: Introduction to Programming and Computation, this program allows a user to navigate Dartmouth campus using only the most efficient routes between start and goal locations. Users can click on a beginning location, and hover over any other location to visually receive the shortest path between the two points.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">business_center</i>What I was given:</div>
+                      <div class="collapsible-body"><span>To begin this lab, I was given acccess to a pdf version of a standard campus map. I was also given a corresponding text file which held the name of each location (or "vertex") on campus, its x and y coordinates in pixels as corresponded to the pdf map, and a list of the names of its immediate, neighboring locations.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">brush</i>How I coded it:</div>
+                      <div class="collapsible-body"><span>I first set about analyzing the text file, parsing, slicing, and splitting the data, and saving each location's line of information in a useful "vertex" object I created separately. Once I had translated the text into objects, I saved the objects in a dictionary, where the keys were each location's name, and the corresponding value was the corresponding vertex object. I then programmed a breadth first search method which would take a start and goal vertex, and return a list of vertices that marked the shortest between the two, after analyzing potential routes via shared neighbors. Finally, I animated the software, creating a simple, user-friendly interface which allowed users to quickly map the optimal path between any two locations on campus.</span></div>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+      
+      </div>
     </div>
-  </div>
     
   <div class="parallax-container">
     <div class="parallax">
@@ -172,6 +224,12 @@
     
 </script>
 
+<!--    expandable script info-->
+        <script>
+      $(document).ready(function(){
+        $('.collapsible').collapsible();
+        });
+    </script>
     
     <!--    materialize script info-->
     

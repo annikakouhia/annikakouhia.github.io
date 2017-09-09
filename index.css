@@ -86,3 +86,7 @@ video {
 .parallax-containerLITE {
       height: 650px;
 }
+
+.nav {
+  background-color: #ffffff !important;
+}
