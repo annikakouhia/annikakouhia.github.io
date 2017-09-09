@@ -4,6 +4,9 @@
     
 <head>
     <title>Annika Kouhia</title>
+    <link rel="stylesheet" href="css/preloader.css">
+
+
     <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet'>
     
@@ -18,8 +21,9 @@
 <body>
 
     
-    
-
+  <div class="progress">
+      <div class="indeterminate"></div>
+  </div>
 
 
         
@@ -53,15 +57,15 @@
     
   <div class="section white">
     <div class="row container">
-        <a name="about"> <h2 class="header" style="color:black;">About</h2> </a>
+        <a name="about"> <h2 class="header" style="color:black;font-family:'Quattrocento';">About</h2> </a>
       
         
         <div class="row">
             <div class="col s6">
-                <img class="responsive-img" src="img/LinkedIn.jpg">
+                <img class="circle responsive-img" src="img/LinkedIn.jpg">
             </div>
             <div class="col s6">
-                <p class="grey-text text-darken-3 lighten-3">Welcome! My name is Annika Kouhia and I am a rising sophomore at Dartmouth college. I'm an aspiring software engineer, but also love both psychology and math. I've studied Java, Python, and C, and in my free time have taught myself how to work in HTML, CSS, and Javascript--which led to the creation of this very website. I'm especially interested in artificial intelligence and the front end of web development, but honestly love all things code.<br><br>Outside of class I love both people and the outdoors. I've most recently combined these interests by helping to welcome Dartmouth's newest freshman class as a volunteer for our First Year Trips program. Ask me about the three weeks I spent living in the woods, cooking brownies on a grill, and singing/dancing/mountain biking with incoming freshmen--there are a lot of fun stories.</p>
+                <p class="grey-text text-darken-3 lighten-3" style="font-family:'Quattrocento';">Welcome! My name is Annika Kouhia and I am a rising sophomore at Dartmouth college. I'm an aspiring software engineer, but also love both psychology and math. I've studied Java, Python, and C, and in my free time have taught myself how to work in HTML, CSS, and Javascript--which led to the creation of this very website. I'm especially interested in artificial intelligence and the front end of web development, but honestly love all things code.<br><br>Outside of class I love both people and the outdoors. I've most recently combined these interests by helping to welcome Dartmouth's newest freshman class as a volunteer for our First Year Trips program. Ask me about the three weeks I spent living in the woods, cooking brownies on a grill, and singing/dancing/mountain biking with incoming freshmen--there are a lot of fun stories.</p>
             </div>
         </div>
         
@@ -76,25 +80,25 @@
     
   <div class="section white">
     <div class="row container">
-        <a name="projects"> <h2 class="header" style="color:black;">Projects</h2> </a>
+        <a name="projects"> <h2 class="header" style="color:black;font-family:'Quattrocento';">Projects</h2> </a>
       
         <div class="row">
             <div class="col s6">
                 <img class="responsive-img" src="img/TSE%20Query.png">
             </div>
             <div class="col s6">
-                <p class="grey-text text-darken-3 lighten-3">What it does:<br>
-            Given a root webpage and a certain depth of search, this program allows users to enter search queries, and receive back any webpages which have that query somewhere on the page. The webpage must be within the given depth of links from the original webpage, and will be scored based on how frequently the query appears. The results are sorted by highest to lowest score.
-        <br><br>
-                    What I was given:<br>
-                    I was given access to certain "safe" root webpages designed specifically for this project so as to not overwhelm the internet or our tiny search engine while conducting queries. The project was also broken down into a Crawler, Indexer, and Querier for ease of organization. <br><br></p>
+                <p class="grey-text text-darken-3 lighten-3" style="color:black;font-family:'Quattrocento';">What it does:<br>
+                Given a root webpage and a certain depth of search, this program allows users to enter search queries, and receive back any webpages which have that query somewhere on the page. The webpage must be within the given depth of links from the original webpage, and will be scored based on how frequently the query appears. The results are sorted by highest to lowest score.
+                <br><br>
+                What I was given:<br>
+                I was given access to certain "safe" root webpages designed specifically for this project so as to not overwhelm the internet or our tiny search engine while conducting queries. The project was also broken down into a Crawler, Indexer, and Querier for ease of organization. <br><br></p>
         
                 
             </div>
         </div>
         
         <p>
-            Our Crawler began with our root webpage, and scanned it for links to each webpage it connected to, and then scanned webpages each of those connected to, and webpages each of those connected to, etc. until the maximum depth was achieved. As it crawled through webpages and links, it documented each page by saving a corresponding text file with the page's URL on the first line, the depth from the root webpage on the second, and the page's HTML starting on the third. Each document was named as the number webpage that had been searched, the first saved as 1, the second as 2, etc.<br>
+            Our <b>Crawler</b> began with our root webpage, and scanned it for links to each webpage it connected to, and then scanned webpages each of those connected to, and webpages each of those connected to, etc. until the maximum depth was achieved. As it crawled through webpages and links, it documented each page by saving a corresponding text file with the page's URL on the first line, the depth from the root webpage on the second, and the page's HTML starting on the third. Each document was named as the number webpage that had been searched, the first saved as 1, the second as 2, etc.<br>
             Our Indexer then took over, creating a master hashtable of each word seen in any HTML, and then pairs of values associated with that word. The first value in each pair was the document number in which that word was found, and the second value in the pair was the number of times that word was found in that document. Once our hashtable was created, we wrote it out to a file in a concise format that allowed for an easy visual summary of our index. <br>
             Finally, our Querier actually handled incoming queries from the user, splicing apart and stringing together queries with "and" and "or" throughout. Itthen tehn  then searched our index for data that matched the query, and eventually summarized findings and outputted to the user.
         </p>
@@ -110,7 +114,7 @@
     
   <div class="section white">
     <div class="row container">
-        <a name="contact"> <h2 class="header" style="color:black;">More</h2> </a>
+        <a name="contact"> <h2 class="header" style="color:black;font-family:'Quattrocento';">More</h2> </a>
       <p class="grey-text text-darken-3 lighten-3">This is where people can contact me.</p>
     </div>
   </div>
