@@ -1,0 +1,530 @@
+
+/* name header */
+.centerInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* name and animation */
+.myName {
+  color: rgb(182, 78, 52);
+  font-family: 'Amatic SC', cursive;
+  font-size: 140px;
+  display: inline-block;
+  position: relative;
+}
+.heading {
+  color: rgb(182, 78, 52);
+  font-family: 'Ovo', serif;
+  font-size: 35px;
+  display: inline-block;
+  position: relative;
+  margin-top: 70px;
+}
+.myName:after, .heading:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 5px double;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+.myName:hover:after, .heading:hover:after{
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+.info {
+  color: rgb(54, 65, 86);
+  font-family: 'Ovo', serif;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* navbar details and overrides */
+.navbar{
+  background-color: white;
+}
+
+.navList{
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.nav-link{
+  color: rgb(54, 65, 86);
+  font-size: 25px;
+  font-family: 'Ovo', serif;
+}
+
+.nav-link:hover{
+  color: rgb(54, 65, 86);
+}
+
+.nav-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-item > p {
+  margin-bottom: 0;
+}
+
+.profPic {
+  margin: auto;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("../images/fill1.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../images/fill2.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin-top: 60px;
+  /* margin-bottom: 50px; */
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("../images/fill3b.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin-top: 60px;
+  /* margin-bottom: 50px; */
+}
+
+
+
+/* hover skills effect */
+.circleHolder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color:white;
+}
+.block {
+    width: 25%;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.hovicon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ovo';
+    font-size: 20px;
+    margin: 20px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    position: relative;
+}
+.hovicon:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* makes appear without hover*/
+ .hovicon.effect-1 {
+    background-color: rgba(182, 78, 52, .8);
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* makes circle blue on hover */
+ .hovicon.effect-1.sub-a:hover {
+    background: rgb(54, 65, 86);
+}
+
+/* makes blue ring appear with hover */
+.hovicon.effect-1.sub-a:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+.hovicon.effect-1:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 4px rgb(54, 65, 86);
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(.8);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(.8);
+    opacity: 0;
+}
+
+
+/* front photo effects */
+body{
+  text-align: center;
+}
+
+.container-block {
+	color: #fff;
+	display: inline-block;
+	margin: 2rem;
+	max-width: 450px;
+	position: relative;
+}
+
+.container-block img {
+  display: block;
+  max-width: 100%;
+}
+
+.container-block:before {
+		bottom: 0;
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+.container-block:hover .inner-block:before{
+      height: 100%;
+    }
+
+.container-block:hover .slider-top-right:after{
+      height: 100%;
+    }
+
+.container-block:hover .inner-block:after{
+      width: 100%;
+    }
+.container-block:hover .slider-top-right:before{
+      width: 100%;
+    }
+
+.block-content {
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	padding: 0 1rem;
+}
+
+.slider-top-right:before,
+.inner-block:after {
+	height: 4px;
+	transition: width .75s ease;
+	width: 0%;
+}
+
+.slider-top-right:after,
+.inner-block:before {
+	height: 0%;
+	transition: height .75s ease;
+	width: 4px;
+}
+
+.inner-block:before,
+.inner-block:after,
+.slider-top-right:before,
+.slider-top-right:after {
+	background-color: #fff;
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+.inner-block {
+	font-size: 2em;
+	width: 90%;
+	height: 90%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.inner-block:before{
+  bottom: 0;
+  left: 0;
+}
+.inner-block:after{
+  bottom: 0;
+  right: 0;
+}
+
+.slider-top-right {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.slider-top-right:before{
+  top: 0;
+  left: 0;
+}
+
+.slider-top-right:after{
+  top: 0;
+  right: 0;
+}
+
+/* icons */
+.iconic{
+  font-size: 8em;
+  color: rgb(54, 65, 86);
+}
+.grow {
+  transition: all .2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.card-columns{
+  margin-top: 5vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+.card-title, .card-text{
+  color: rgb(182, 78, 52);
+  font-family: 'Ovo', serif;
+  font-size: 20px;
+}
+
+/* button animation */
+.openmodal {
+  color: rgb(54, 65, 86);
+  font-family: 'Ovo', serif;
+  font-size: 15px;
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.openmodal:after, .openmodal:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid rgb(54, 65, 86);
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.openmodal:after {
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+}
+.openmodal:before {
+  -webkit-transform: translate(-3px, -3px);
+          transform: translate(-3px, -3px);
+}
+.openmodal:hover:after, .openmodal:hover:before {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+
+/* fade in cards */
+.fader{
+  opacity: 0;
+  transform: translate(0,40px);
+  transition: all 1s;
+}
+.fader.visible{
+  opacity: 1;
+  transform: translate(0,0);
+}
+.row{
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 7vh;
+}
+
+/* modal design */
+.modal-title{
+  color: rgb(182, 78, 52);
+  font-family: 'Ovo', serif;
+  font-size: 20px;
+}
+.modal-body{
+  color: rgb(54, 65, 86);
+  font-family: 'Ovo', serif;
+  font-size: 17px;
+}
+.btn, .close{
+  font-family: 'Ovo', serif;
+  font-size: 17px;
+  color: rgb(182, 78, 52);
+  background-color: white;
+  border-color: rgb(182, 78, 52);
+}
+.close{
+  font-size: 30px;
+}
+.btn:hover{
+  background-color: rgb(182, 78, 52);
+  color: white;
+}
+
+/* contact info animation */
+.hmu:nth-child(odd) {
+  font-size: 8em;
+  color: rgb(54, 65, 86);
+  margin-bottom: 20px;
+}
+
+.hmu:nth-child(even) {
+  margin-bottom: 50px;
+  font-size: 8em;
+  color: rgb(54, 65, 86);
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+}
+.hmutransition:hover {
+    transition-property: background;
+    color: rgb(182, 78, 52);
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+/* Animation Keyframe Rules */
+@-webkit-keyframes hover-board {
+   0% {
+       transform: translate(0px, 0px);
+       -webkit-transform: translate(0px, 0px);
+       animation-timing-function:ease-in-out;
+   }
+
+   50% {
+       transform: translate(0px, 22px);
+       -webkit-transform: translate(0px, 22px);
+       animation-timing-function:ease-in-out;
+   }
+
+   100% {
+       transform: translate(0px, 0px);
+       -webkit-transform: translate(0px, 0px);
+       animation-timing-function:ease-in-out;
+   }
+}
+@-moz-keyframes hover-board {
+   0% {
+       transform: translate(0px, 0px);
+       animation-timing-function:ease-in-out;
+   }
+
+   50% {
+       transform: translate(0px, 22px);
+       animation-timing-function:ease-in-out;
+   }
+
+   100% {
+       transform: translate(0px, 0px);
+       animation-timing-function:ease-in-out;
+   }
+}
+@-o-keyframes hover-board {
+   0% {
+       transform: translate(0px, 0px);
+       animation-timing-function:ease-in-out;
+   }
+
+   50% {
+       transform: translate(0px, 22px);
+       animation-timing-function:ease-in-out;
+   }
+
+   100% {
+       transform: translate(0px, 0px);
+       animation-timing-function:ease-in-out;
+   }
+}
+@keyframes hover-board {
+   0% {
+       transform: translate(0px, 0px);
+       animation-timing-function:ease-in-out;
+   }
+
+   50% {
+       transform: translate(0px, 22px);
+       animation-timing-function:ease-in-out;
+   }
+
+   100% {
+       transform: translate(0px, 0px);
+       animation-timing-function:ease-in-out;
+   }
+}
+.hmuanimation {
+  -webkit-animation: hover-board 2s infinite; /* Safari 4+ */
+  -moz-animation:    hover-board 2s infinite; /* Fx 5+ */
+  -o-animation:      hover-board 2s infinite; /* Opera 12+ */
+  animation:         hover-board 2s infinite; /* IE 10+, Fx 29+ */
+}
