@@ -542,9 +542,26 @@ body{
     flex-basis: 50vw;
   }
 }
+
 @media screen and (max-width: 750px) {
   .circleHolder{
     flex-wrap: wrap;
   }
 }
+
+
+/* @media screen and (max-width: 400px) {
+  .nav{
+    flex-direction: column;
+  }
+  .circleHolder{
+    flex-direction: column;
+  }
 }
+.col-sm-4{
+  margin-bottom: 20vh;
+  min-width: 70vw;
+  max-width: 90vw;
+  flex-basis: 80vw;
+}
+} */
