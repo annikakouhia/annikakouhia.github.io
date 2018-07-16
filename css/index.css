@@ -528,3 +528,23 @@ body{
   -o-animation:      hover-board 2s infinite; /* Opera 12+ */
   animation:         hover-board 2s infinite; /* IE 10+, Fx 29+ */
 }
+
+
+@media screen and (max-width: 900px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-sm-4{
+    min-width: 40vw;
+    max-width: 60vw;
+    flex-basis: 50vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  .circleHolder{
+    flex-wrap: wrap;
+  }
+}
+}
