@@ -535,33 +535,34 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    min-height: 250vh;
   }
   .col-sm-4{
     min-width: 40vw;
     max-width: 60vw;
     flex-basis: 50vw;
   }
-}
-
-@media screen and (max-width: 750px) {
   .circleHolder{
     flex-wrap: wrap;
   }
 }
 
-
-/* @media screen and (max-width: 400px) {
+@media screen and (max-width: 575px){
   .nav{
+    display: flex;
     flex-direction: column;
   }
-  .circleHolder{
-    flex-direction: column;
+  .hideme{
+    display: none;
+  }
+  .navbar-toggler{
+    color: rgb(54, 65, 86);
+  }
+  .row{
+    min-height: 150vh;
+  }
+  .parallax3{
+    margin-top: 30vh;
   }
 }
-.col-sm-4{
-  margin-bottom: 20vh;
-  min-width: 70vw;
-  max-width: 90vw;
-  flex-basis: 80vw;
-}
-} */
