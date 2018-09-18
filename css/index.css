@@ -22,7 +22,7 @@
   position: relative;
   margin-top: 70px;
 }
-.myName:after, .heading:after {
+.myName:after, .heading:after, .testing:after {
   content: '';
   position: absolute;
   left: 0;
@@ -37,7 +37,7 @@
   -webkit-transform: scale(0,1);
   transform: scale(0,1);
 }
-.myName:hover:after, .heading:hover:after{
+.myName:hover:after, .heading:hover:after, .testing:after{
   opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
