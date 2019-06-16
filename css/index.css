@@ -6,6 +6,14 @@
   justify-content: center;
 }
 
+/* name header */
+.yearReview{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+
 /* name and animation */
 .myName {
   color: rgb(182, 78, 52);
